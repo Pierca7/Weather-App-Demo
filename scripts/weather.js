@@ -93,7 +93,7 @@ function getData(latlng) {
 
 //Obtener datos de forma asincronica.
 function requestData(latlng) {
-	let request = $.getJSON("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + key + "/" + latlng.lat + "," + latlng.lng +
+	let request = $.getJSON("https://api.darksky.net/forecast/" + key + "/" + latlng.lat + "," + latlng.lng +
 		"?exclude=[minutely,alerts,flags]&lang=" + lang + "&units=" + unit, function () {
 		});
 
@@ -120,7 +120,6 @@ function fillData(tipo) {
 	else {
 		tempUnit = "°F";
 	}
-	console.log(tipo)
 	//Pronostico de hoy.
 	if (tipo == "today") {
 		$("#today-by-hour").children().each(function () {

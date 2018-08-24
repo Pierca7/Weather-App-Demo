@@ -8,4 +8,4 @@ El código utiliza las APIs de Google Geocoding y Dark Sky, por lo que tener una
 
 2- Definir una constante llamada key y asignarle tu key de Dark Sky (const key = "tu key");
 
-3- En index.html, quitar el comentario del script de google y reemplazar "API KEY" por tu key de Gogogle Geocoding.
+3- En index.html, quitar el comentario del script de google y reemplazar "API KEY" por tu key de Google Geocoding.
