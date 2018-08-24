@@ -120,7 +120,6 @@ function fillData(tipo) {
 	else {
 		tempUnit = "°F";
 	}
-	console.log(tipo)
 	//Pronostico de hoy.
 	if (tipo == "today") {
 		$("#today-by-hour").children().each(function () {
