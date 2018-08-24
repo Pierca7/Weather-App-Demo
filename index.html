@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherAppDemo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/please-wait.css" />
+        <!-- Fuentes -->  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Formulario de busqueda -->
+        <div class="row">
+            <div class="col-12">
+                <form action="javascript:void(0)" id="locationForm" class="form-group text-center form-inline">
+                    <input type="text" placeholder="Localidad, Provincia, País" class="form-control mx-2 my-auto w-100" id="locationInput">
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-auto menu border border-light rounded-right text-center">
+
+                <!-- Icono -->
+                <i class="material-icons rounded-right px-1 py-4" id="settings">settings</i>
+                <ul>
+                    <!-- Hoy -->
+                    <li>
+                        <a class="menu-link btn btn-info" id="today" href="javascript:void(0)">Today</a>
+                    </li>
+
+                    <!-- Extendido -->
+                    <li>
+                        <a class="menu-link btn btn-info" id="weekly" href="javascript:void(0)">Weekly</a>
+                    </li>
+
+                    <!-- Unidades -->
+                    <li>
+                        <p class="m-0">Unidades</p>
+                        <input class="unit" type="radio" name="options" id="si" value="si" autocomplete="off" checked>SI
+                        <input class="unit" type="radio" name="options" id="us" value="us" autocomplete="off">US
+                    </li>
+
+                    <!-- Actualizar -->
+                    <li>
+                        <button class="update btn btn-light" href="javascript:void(0)">Actualizar</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col w-100">
+                <div class="row w-100" id="main-panel">
+                    <!-- Panel -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Librerias -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="scripts/timezone.js" type="text/javascript"></script>
+    <script src="scripts/skycons.js" type="text/javascript"></script>
+    <script src="scripts/please-wait.js" type="text/javascript"></script>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=API KEY"></script> -->
+
+    <!-- Scripts  -->
+    <script src="config.js" type="text/javascript"></script>
+    <script src="scripts/weather.js" type="text/javascript"></script>
+
+
+</body>
+
+
+</html>
